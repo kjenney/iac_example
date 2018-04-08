@@ -1,0 +1,4 @@
+---
+
+- src: https://github.com/geerlingguy/ansible-role-nodejs.git
+- src: https://github.com/jlund/ansible-go

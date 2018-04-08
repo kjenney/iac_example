@@ -1,0 +1,17 @@
+{
+  "variables": {
+    "env": "dev",
+    "node-type": "webserver"
+  },
+  "builders":[{
+    "type": "amazon-ebs",
+    "access_key": "...",
+    "secret_key": "..."
+  }],
+  "post-processors": [
+    {
+      "type": "compress",
+      "format": "tar.gz"
+    }
+  ]
+}
