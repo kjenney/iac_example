@@ -1,8 +1,8 @@
 {
   "variables": {
-    "env": "dev",
-    "node-type": "webserver",
-    "version": "1.2"
+    "env": "all",
+    "node-type": "all",
+    "version": "1.0"
   },
   "builders":[{
     "type": "amazon-ebs",
@@ -19,12 +19,12 @@
     "instance_type": "t2.micro",
     "ssh_username": "centos",
     "ssh_interface": "public_ip",
-    "ami_name": "webserver-{{user `version`}}"
+    "ami_name": "base-{{user `version`}}"
   }],
   "provisioners": [
     {
       "type": "ansible",
-      "playbook_file": "../../ansible-repo/playbooks/apache.yml"
+      "playbook_file": "../../ansible-repo/playbooks/base.yml"
     }
   ]
 }

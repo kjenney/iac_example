@@ -3,7 +3,6 @@
 include = "amis,directory,iam,jump,keypair,route,security_groups,vpc"
 
 aws_region = "us-east-1"
-aws_ami = "ami-02e98f78"
 aws_key_name = "prod"
 aws_vpc_cidr = "10.0.0.0/16"
 aws_cidr_1 = "10.0.1.0/24"

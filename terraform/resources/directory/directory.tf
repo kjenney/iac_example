@@ -2,9 +2,14 @@ variable "directory_tag" {
   description = "What do you want to tag for the directory?"
 }
 
+variable "directory_password" {
+  description = "The Simple AD password."
+}
+
+
 resource "aws_directory_service_directory" "simple" {
   name     = "corp.example.com"
-  password = "SuperSecretPassw0rd"
+  password = "${var.directory_password}"
   size     = "Small"
 
   vpc_settings {

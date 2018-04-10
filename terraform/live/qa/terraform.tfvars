@@ -1,9 +1,9 @@
 ### This is a single Variable Defintion file for the QA environment  ###
 
-include = "amis,jump,keypair,route,security_groups,vpc"
+#include = "amis,jump,keypair,route,security_groups,vpc"
+include = "vpc,iam"
 
 aws_region = "us-west-1"
-#aws_ami = "ami-65e0e305"
 aws_key_name = "qa"
 aws_vpc_cidr = "10.0.0.0/16"
 aws_cidr_1 = "10.0.1.0/24"
