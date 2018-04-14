@@ -1,6 +1,6 @@
 ### This is a single Variable Defintion file for the PROD environment  ###
 
-include = "amis,directory,iam,jump,keypair,route,security_groups,vpc"
+include = "amis,iam,jump,keypair,route,security_groups,vpc"
 
 aws_region = "us-east-1"
 aws_key_name = "prod"

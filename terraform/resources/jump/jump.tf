@@ -27,7 +27,7 @@ resource "aws_instance" "jump" {
   instance_type = "${var.jump_instance_type}"
 
   #ami = "${lookup(var.aws_amis, var.aws_region)}"
-  ami = "${data.aws_ami.web.id}"
+  ami = "${data.aws_ami.base.id}"
  
   associate_public_ip_address = true
 

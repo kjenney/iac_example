@@ -9,3 +9,14 @@ data "aws_ami" "web" {
 
   owners     = ["self"]
 }
+
+data "aws_ami" "base" {
+  most_recent      = true
+
+  filter {
+    name   = "name"
+    values = ["base*"]
+  }
+
+  owners     = ["self"]
+}
