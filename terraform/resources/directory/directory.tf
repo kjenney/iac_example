@@ -6,9 +6,12 @@ variable "directory_password" {
   description = "The Simple AD password."
 }
 
+variable "directory_name" {
+  description = "The name of the AD."
+}
 
 resource "aws_directory_service_directory" "simple" {
-  name     = "corp.example.com"
+  name     = "${var.directory_name}"
   password = "${var.directory_password}"
   size     = "Small"
 
